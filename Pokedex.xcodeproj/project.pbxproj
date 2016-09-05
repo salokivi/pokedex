@@ -16,6 +16,8 @@
 		ECB1BB7C1D7C937E00B5E167 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB1BB7B1D7C937E00B5E167 /* Pokemon.swift */; };
 		ECB1BB7F1D7CB27700B5E167 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB1BB7E1D7CB27700B5E167 /* PokeCell.swift */; };
 		ECB1BB831D7CBB0100B5E167 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB1BB821D7CBB0100B5E167 /* csv.swift */; };
+		ECB1BB861D7DEE7A00B5E167 /* Pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECB1BB851D7DEE7A00B5E167 /* Pokemon.ttf */; };
+		ECB1BB881D7DF31800B5E167 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECB1BB871D7DF31800B5E167 /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		ECB1BB7B1D7C937E00B5E167 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		ECB1BB7E1D7CB27700B5E167 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		ECB1BB821D7CBB0100B5E167 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		ECB1BB851D7DEE7A00B5E167 /* Pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pokemon.ttf; sourceTree = "<group>"; };
+		ECB1BB871D7DF31800B5E167 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 		ECB1BB841D7CBB1800B5E167 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ECB1BB871D7DF31800B5E167 /* music.mp3 */,
+				ECB1BB851D7DEE7A00B5E167 /* Pokemon.ttf */,
 				ECB1BB781D7C8F4D00B5E167 /* pokemon.csv */,
 			);
 			name = Resources;
@@ -176,6 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECB1BB711D7C8BE400B5E167 /* LaunchScreen.storyboard in Resources */,
+				ECB1BB861D7DEE7A00B5E167 /* Pokemon.ttf in Resources */,
+				ECB1BB881D7DF31800B5E167 /* music.mp3 in Resources */,
 				ECB1BB6E1D7C8BE400B5E167 /* Assets.xcassets in Resources */,
 				ECB1BB791D7C8F4D00B5E167 /* pokemon.csv in Resources */,
 				ECB1BB6C1D7C8BE400B5E167 /* Main.storyboard in Resources */,
