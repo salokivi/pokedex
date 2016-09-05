@@ -86,8 +86,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     }
     
+    // A pokemon was tapped
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+        var poke: Pokemon!
+        
+        if inSearchMode {
+            poke = filteredPokemon[indexPath.row]
+        } else {
+            poke = pokemon[indexPath.row]
+        }
+        
+        performSegueWithIdentifier("PokemonDetailVC", sender: poke) // pass in the pokemon when doing the segue
     }
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -134,6 +144,21 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let lower = searchBar.text!.lowercaseString // grab the current text in the searchBar
             filteredPokemon = pokemon.filter({$0.name.rangeOfString(lower) != nil}) // $0 grab an element from the array and put it in a variable and grab it's name property. For all Pokemon in thr array. Also rangeOfString checks if any of the name-string contain the string in the searchBar (lower). The closure is being run for every element
             collection.reloadData() // refresh with the datasource
+        }
+    }
+    
+    // this is done befoew viewDidLoad() in this ViewController. We'll get the Pokemon that was tapped, and will display it's details
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "PokemonDetailVC" {
+            
+            // grab the UIViewController and Cast it to PokemonDetailVC (inherits from UIViewController)
+            if let detailsVC = segue.destinationViewController as? PokemonDetailVC {
+                
+                // we're sending a pokemon but sender is an object so we must cast it to Pokemon for poke
+                if let poke = sender as? Pokemon {
+                    detailsVC.pokemon = poke
+                }
+            }
         }
     }
 }
