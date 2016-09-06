@@ -29,7 +29,7 @@
 		8D4EA26EAD23BFAFDD6D7F83 /* Pods-Pokedex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pokedex/Pods-Pokedex.debug.xcconfig"; sourceTree = "<group>"; };
 		E2BA7C2612EDA57581DE0713 /* Pods-Pokedex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pokedex/Pods-Pokedex.release.xcconfig"; sourceTree = "<group>"; };
 		ECA4E9C71D7F2B0100CEE0C7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		ECA4E9C91D7F58FF00CEE0C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ECA4E9C91D7F58FF00CEE0C7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		ECB1BB631D7C8BE400B5E167 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB1BB661D7C8BE400B5E167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECB1BB681D7C8BE400B5E167 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +78,6 @@
 		ECB1BB5A1D7C8BE300B5E167 = {
 			isa = PBXGroup;
 			children = (
-				ECA4E9C91D7F58FF00CEE0C7 /* README.md */,
 				ECB1BB651D7C8BE400B5E167 /* Pokedex */,
 				ECB1BB641D7C8BE400B5E167 /* Products */,
 				D29D8BD13E4BF684E70D91AD /* Pods */,
@@ -97,6 +96,7 @@
 		ECB1BB651D7C8BE400B5E167 /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				ECA4E9C91D7F58FF00CEE0C7 /* README.md */,
 				ECB1BB841D7CBB1800B5E167 /* Resources */,
 				ECB1BB7A1D7C934E00B5E167 /* Model */,
 				ECB1BB7D1D7CB24800B5E167 /* View */,
